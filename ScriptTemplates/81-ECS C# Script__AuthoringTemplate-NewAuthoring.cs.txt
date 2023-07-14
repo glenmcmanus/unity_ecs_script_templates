@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Entities;
+using UnityEngine;
+
+public class #SCRIPTNAME# : MonoBehaviour
+{
+
+	class Baker : Baker<#SCRIPTNAME#>
+	{
+        public override void Bake(#SCRIPTNAME# authoring)
+		{
+			var entity = GetEntity(TransformUsageFlags.None);
+			AddComponent(entity, new #SCRIPTNAME#Data());
+		}
+	}
+
+}
+
+public struct #SCRIPTNAME#Data : IComponentData
+{
+#NOTRIM#
+}
