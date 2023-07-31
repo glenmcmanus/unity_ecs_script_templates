@@ -7,8 +7,6 @@ using UnityEngine;
 
 public partial struct #SCRIPTNAME# : ISystem
 {
-	static readonly float speed = 3f;
-
 	[BurstCompile]
 	public void OnCreate(ref SystemState state)
 	{
